@@ -1,0 +1,7 @@
+{
+  "name": "cloneProyecto",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
