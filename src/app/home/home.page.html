@@ -14,7 +14,14 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <strong>FORMULARIO DE REGISTRO DE USER</strong>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <ion-input placeholder="Username" formControlName="username"></ion-input>
+      <ion-input placeholder="Password" formControlName="password"></ion-input>
+      <ion-input placeholder="Rol"></ion-input>
+      <ion-input placeholder="Surname"></ion-input>
+      <ion-input placeholder="name"></ion-input>
+      <ion-button color="primary" type="submit">Guardar</ion-button>
+    </form>
   </div>
 </ion-content>
